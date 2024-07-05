@@ -1,0 +1,58 @@
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    background-color: black;
+   }
+   body{
+    overflow-x: hidden;
+   }
+   .loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+
+
+    
+    .navbar-nav .nav-link {
+        color: white !important;
+        padding: 10px 20px; /* Adjust padding as needed */
+        font-size: 22px; /* Adjust font size as needed */
+        margin-right: 100px;
+      }
+      .navbar-nav .nav-link:hover{
+        border: 1px solid blue;
+        
+      }
+  
+  .navbar-toggler-white {
+    border-color: rgba(255, 252, 252, 0.5); 
+  }
+
+  .navbar-toggler-white .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  .vh-100 {
+    min-height: 100vh; /* Ensure section takes full viewport height */
+  }
+  
+  /* Left column padding for large devices */
+  @media (min-width: 992px) {
+    .px-md-5 {
+      padding-left: 20px;
+    }
+  }
+ 
+  /* Responsive styling for image */
+  @media (max-width: 991.98px) {
+    .img-fluid {
+      max-width: 200px; /* Adjust max width as needed */
+      height: auto;
+      border-radius: 50%; /* Make image round */
+      border: 8px solid #fff; /* Add a white border for contrast */
+    }
+  }
