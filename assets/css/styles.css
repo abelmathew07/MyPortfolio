@@ -53,7 +53,7 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-  filter: drop-shadow(1px 1px 20px rgb(41, 79, 174));
+  filter: drop-shadow(1px 1px 20px rgb(25, 76, 205));
 }
 
 .navbar-toggler-white {
@@ -64,8 +64,8 @@ body {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-.sec1 .social-icons mt-3:hover {
-  box-shadow: 1px 1px 20px rgb(50, 66, 157);
+.sec1 .social-icons a i:hover {
+  box-shadow: rgba(0, 115, 255, 0.816) 1px 10px 10px;
 }
 
 .sec1 button {
@@ -83,7 +83,7 @@ body {
 }
 
 .sec1_img img {
-  filter: drop-shadow(0 0 10px rgba(232, 235, 73, 0.549));
+  filter: drop-shadow(0 0 10px rgba(73, 97, 235, 0.549));
   transition: filter 0.3s ease-in-out;
 }
 
@@ -318,7 +318,6 @@ text-align: justify;
 
 
 
-
 .sec5 {
   padding: 40px 0px;
   min-height: 90vh;
@@ -335,27 +334,23 @@ text-align: justify;
 }
 
 .sec5 .parent {
-  height: 400px;
-  width: 300px;
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   perspective: 1000px;
-}
-.sec5 .card1 .card{
-  background-image: url('/assets/images/projects/stella.jpg');
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat; 
-  object-fit: fill;
 }
 
 .sec5 .card {
+  height: 100%;
+  width: 100%;
   padding-top: 100px;
   transform-style: preserve-3d;
-  
   background-position: center center;
-  width: 100%;
   transition: all 0.5s ease-in-out;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .sec5 .card:hover {
@@ -364,7 +359,7 @@ text-align: justify;
 }
 
 .sec5 .content-box {
-  height: 100%;
+  height: auto;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.811);
   border-radius: 0px 0px 10px 10px;
@@ -376,8 +371,8 @@ text-align: justify;
 
 .sec5 .content-box .card-title {
   color: white;
-  font-size: 25px;
-  font-weight: 900;
+  font-size: 20px;
+  font-weight: 800;
   transition: all 0.5s ease-in-out;
   transform: translate3d(0px, 0px, 20px);
 }
@@ -413,41 +408,49 @@ text-align: justify;
   transform: translate3d(0px, 0px, 50px);
 }
 
-.sec5 .date-box {
-  position: absolute;
-  top: 75px;
-  left: 25px;
-  height: 60px;
-  width: 60px;
-  background-color: black;
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: #0066ff 0px 20px 60px 0px, #00c8ff 0px 18px 36px -18px;
-  transform: translate3d(0px, 0px, 50px);
+.sec5 .card1 .card {
+  background-image: url('/assets/images/projects/stella.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: fill;
 }
 
-.sec5 .date-box span {
-  display: block;
-  text-align: center;
+.sec5 .card2 .card {
+  background-image: url('/assets/images/projects/biometric voting system.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: fill;
 }
 
-.sec5 .date-box .month {
-  color: white;
-  font-size: 11px;
-  font-weight: 700;
+.sec5 .card3 .card {
+  background-image: url('/assets/images/projects/personalmanagementsystem.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: fill;
 }
 
-.sec5 .date-box .date {
-  font-size: 20px;
-  font-weight: 900;
-  color: #0088ff;
+.sec5 .card4 .card {
+  background-image: url('/assets/images/projects/QuebeC.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: fill;
 }
 
-.sec5 .card2 {
-  filter: hue-rotate(150deg);
+@media (max-width: 992px) {
+  .sec5 .col-md-6 {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
 }
 
-.sec5 .card3 {
-  filter: hue-rotate(300deg);
+@media (max-width: 768px) {
+  .sec5 .col-sm-12 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
 }
 
