@@ -1,3 +1,13 @@
+
+@font-face {
+  font-family: agustina;
+  src: url('/assets/fonts/Agustina.woff');
+}
+
+@font-face {
+  font-family: 'Dancing Script';
+  src: url('/assets/fonts/DancingScript-Medium.ttf') format('truetype');
+}
 * {
   margin: 0;
   box-sizing: border-box;
@@ -12,7 +22,12 @@ body {
 .body_container{
   background-image: url(/assets/images/grid.png);
   background-repeat: repeat;
+  
 }
+.hidden-until-loaded {
+  display: none;
+}
+
 
 .loader-container {
   display: flex;
@@ -21,8 +36,13 @@ body {
   height: 100vh;
 }
 
-nav {
-  background-color: black !important;
+
+.navbar-brand span{
+  color: white;
+}
+.logo-name{
+  font-family: 'Agustina', 'Rubik', sans-serif;
+  font-size: 1.2rem;
 }
 
 .navbar-nav .nav-link {
@@ -97,6 +117,11 @@ nav {
  
   
 }
+.sec2 .container .card{
+  border: 1px solid violet;
+  background: #151515 !important;
+  color: white;
+}
 
 .sec3 {
   padding-top: 10px !important;
@@ -127,6 +152,7 @@ text-align: justify;
 }
 .about_heading
 {
+  font-family: Dancing Script;
   margin-top: 2px;
   color: #fff;
   height: 100px;
@@ -136,6 +162,7 @@ text-align: justify;
 }
 .interest_heading
 {
+  font-family: Dancing Script;
   margin-top: 2px;
   color: #fff;
   height: 100px;
@@ -147,14 +174,31 @@ text-align: justify;
   font-weight: bolder;
   font-size: larger;
 }
+.sec4_heading{
+  font-family: Dancing Script;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 #contact{
   color: #fff !important;
-  padding: 100px 0;
-  min-height: 100vh;
+  padding: 40px 0;
+  min-height: 70vh;
   
   
   background-size: contain;
+}
+#contact .section-heading{
+  font-family: Dancing Script;
 }
 
 .contact-form{
@@ -183,3 +227,227 @@ text-align: justify;
 .contact-form .btn{
   background-color: #850dd5;
 }
+
+
+
+
+#skills{
+  padding: 40px 0px;
+  min-height: 90vh;
+  color: #fff;
+}
+
+.skill{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: transparent;
+  padding: 18px 0px;
+  border-radius: 25px;
+  backdrop-filter: blur(300px);
+  -webkit-backdrop-filter: blur(300px);
+  box-shadow: 0 0 1px 0 rgba(144,81,227,.5), 0 0 0.5px 0.5px rgba(141,53,229,.336);
+  -webkit-box-shadow: 0 0 1px 0 rgba(144,81,227,.5), 0 0 0.5px 0.5px rgba(141,53,229,.336);
+
+  transform-style: preserve-3d;
+  
+  
+  transition: all 0.5s ease-in-out;
+}
+.skill:hover{
+  background-position: 80% 20%;
+  transform: rotate3d(0.5, 1, 0, 30deg);
+  box-shadow: rgba(255, 0, 238, 0.925) 0px 20px 50px -25px;
+}
+
+.skill-image{
+  width: 71px;
+  padding: 8px;
+  height: 71px;
+}
+
+.skill-name{
+  letter-spacing: 2px;
+  font-size: 17px;
+  padding-top: 5px;
+  margin: 0;
+}
+
+
+#tools{
+  padding: 40px 0px;
+  min-height: 80vh;
+  color: #fff;
+}
+
+.tool{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: transparent;
+  padding: 18px 0px;
+  border-radius: 25px;
+  backdrop-filter: blur(300px);
+  -webkit-backdrop-filter: blur(300px);
+  box-shadow: 0 0 1px 0 rgba(144,81,227,.5), 0 0 0.5px 0.5px rgba(141,53,229,.336);
+  -webkit-box-shadow: 0 0 1px 0 rgba(144,81,227,.5), 0 0 0.5px 0.5px rgba(141,53,229,.336);
+
+  transform-style: preserve-3d;
+  
+  
+  transition: all 0.5s ease-in-out;
+}
+.tool:hover{
+  background-position: 80% 20%;
+  transform: rotate3d(0.5, 1, 0, 30deg);
+  box-shadow: rgba(255, 0, 238, 0.925) 0px 20px 50px -25px;
+}
+
+.tool-image{
+  width: 71px;
+  padding: 8px;
+  height: 71px;
+}
+
+.tool-name{
+  letter-spacing: 2px;
+  font-size: 17px;
+  padding-top: 5px;
+  margin: 0;
+}
+
+
+
+
+.sec5 {
+  padding: 40px 0px;
+  min-height: 90vh;
+  color: #fff;
+}
+
+.projects_heading {
+  font-family: 'Dancing Script', cursive;
+  margin-top: 2px;
+  color: #fff;
+  height: 100px;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
+.sec5 .parent {
+  height: 400px;
+  width: 300px;
+  padding: 20px;
+  perspective: 1000px;
+}
+.sec5 .card1 .card{
+  background-image: url('/assets/images/projects/stella.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  object-fit: fill;
+}
+
+.sec5 .card {
+  padding-top: 100px;
+  transform-style: preserve-3d;
+  
+  background-position: center center;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+  border-radius: 10px;
+}
+
+.sec5 .card:hover {
+  background-position: 80% 20%;
+  transform: rotate3d(0.5, 1, 0, 30deg);
+}
+
+.sec5 .content-box {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.811);
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: rgba(0, 115, 255, 0.925) 0px 20px 50px -25px;
+  transition: all 0.5s ease-in-out;
+  padding: 50px 25px 25px 25px;
+  transform-style: preserve-3d;
+}
+
+.sec5 .content-box .card-title {
+  color: white;
+  font-size: 25px;
+  font-weight: 900;
+  transition: all 0.5s ease-in-out;
+  transform: translate3d(0px, 0px, 20px);
+}
+
+.sec5 .content-box .card-title:hover {
+  transform: translate3d(0px, 0px, 50px);
+}
+
+.sec5 .content-box .card-content {
+  padding-top: 15px;
+  font-size: 12px;
+  color: #b9b9b9;
+  transition: all 0.5s ease-in-out;
+  transform: translate3d(0px, 0px, 20px);
+}
+
+.sec5 .content-box .card-content:hover {
+  transform: translate3d(0px, 0px, 50px);
+}
+
+.sec5 .content-box .see-more {
+  display: block;
+  font-weight: 900;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #0088ff;
+  padding-top: 15px;
+  transition: all 0.5s ease-in-out;
+  transform: translate3d(0px, 0px, 20px);
+}
+
+.sec5 .content-box .see-more:hover {
+  transform: translate3d(0px, 0px, 50px);
+}
+
+.sec5 .date-box {
+  position: absolute;
+  top: 75px;
+  left: 25px;
+  height: 60px;
+  width: 60px;
+  background-color: black;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: #0066ff 0px 20px 60px 0px, #00c8ff 0px 18px 36px -18px;
+  transform: translate3d(0px, 0px, 50px);
+}
+
+.sec5 .date-box span {
+  display: block;
+  text-align: center;
+}
+
+.sec5 .date-box .month {
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.sec5 .date-box .date {
+  font-size: 20px;
+  font-weight: 900;
+  color: #0088ff;
+}
+
+.sec5 .card2 {
+  filter: hue-rotate(150deg);
+}
+
+.sec5 .card3 {
+  filter: hue-rotate(300deg);
+}
+
