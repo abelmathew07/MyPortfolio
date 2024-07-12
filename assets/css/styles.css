@@ -211,6 +211,7 @@ text-align: justify;
   -webkit-box-shadow: 0 0 1px 0 rgba(144, 81, 227, .5), 0 0 0.5px 0.5px rgba(141, 53, 229, .336);
 }
 
+
 .contact-form .form-control{
   padding: 0.775rem 1.05rem;
   background-color: transparent;
@@ -225,6 +226,7 @@ text-align: justify;
 }
 
 .contact-form .btn{
+  color: aliceblue;
   background-color: #850dd5;
 }
 
@@ -439,6 +441,15 @@ text-align: justify;
   background-repeat: no-repeat;
   object-fit: fill;
 }
+
+.sec5 .card5 .card {
+  background-image: url('/assets/images/projects/Stacpad.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: fill;
+}
+
 
 @media (max-width: 992px) {
   .sec5 .col-md-6 {
